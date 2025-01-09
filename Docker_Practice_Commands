@@ -1,0 +1,138 @@
+1  mkdir -p flask_app
+    2  cd flask_app/
+    3  git inin
+    4  git init 
+    5  git remote set-url origin git@github.com:Rathodkrishna/docker_flask_docker_compose.git
+    6  git remote add origin git@github.com:Rathodkrishna/docker_flask_docker_compose.git
+    7  git remote set-url origin git@github.com:Rathodkrishna/docker_flask_docker_compose.git
+    8  git remote -v
+    9  git pull 
+   10  git pull origin main
+   11  ls -lrt
+   12  git pull origin 
+   13  git pull origin  
+   14  git pull origin main
+   15  git pull origin master
+   16  ls -lrt
+   17  cd .
+   18  cat Dockerfile 
+   19  cd 
+   20  ls -olrt
+   21  ls -lrt
+   22  ip r
+   23  ping 172.31.90.130
+   24  sudo apt-get update -y
+   25  sudo apt install docker.io -y
+   26  sudo apt install docker-compose-v2 -y
+   27  mkdir -p docker-practice
+   28  cd docker-practice/
+   29  ls -lrt
+   30  cd 
+   31  cd .ssh/
+   32  ssh-keygen 
+   33  cat id_ed25519.pub 
+   34  cd 
+   35  cd docker-practice/
+   36  git sttaus 
+   37  git sttaus
+   38  git status 
+   39  git init 
+   40  docker ps 
+   41  docoke images
+   42  docker images 
+   43  cd docker-practice/
+   44  ls -lrt
+   45  git remote set-url origin git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   46  git remote -v
+   47  git remote set-url origin git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   48  git status
+   49  git remote add orinig git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   50  git remote -v
+   51  git remote set-url origin git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   52  git remote remove orinig
+   53  git remote -v
+   54  git remote add origin git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   55  git remote set-url origin git@github.com:Rathodkrishna/simple-java-docker_SL.git
+   56  git remote -v
+   57  git pull 
+   58  ls -lrt
+   59  git pull origin main
+   60  ls  -lrt
+   61  cat Dockerfile 
+   62  docker images 
+   63  sudo usermod -aG docker ubuntu 
+   64  docker ps 
+   65  newgrp docker
+   66  cd flask_app/
+   67  cd two-tier-flask-app_SL/
+   68  lsd -lrt
+   69  ls -lrt
+   70  docker build -t flaskapp .
+   71  docker images 
+   72  docker ps -a
+   73  #docker run -d --name mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 mysql:7.7
+   74  docker netowk
+   75  docker volume
+   76  docker volume ls
+   77  docker volume create mysql-volume
+   78  docker volume ls
+   79  #docker run -d --name mysql -v mysql-volume:/var/lib/mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 mysql:7.7
+   80  docker run -d --name mysql -v mysql-volume:/var/lib/mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 mysql:7.7
+   81  docker run -d --name mysql -v mysql-volume:/var/lib/mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 mysql:5.7
+   82  docker ps 
+   83  docker network ls
+   84  docker inspect network 
+   85  docker inspect network 66aed4e4b862
+   86  #docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin MYSQL_DB=mydb -p 5000:5000 flaskapp:latest
+   87  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin MYSQL_DB=mydb -p 5000:5000 flaskapp:latest
+   88  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin MYSQL_DB=MYDB -p 5000:5000 flaskapp:latest
+   89  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin mysql_db=mydb -p 5000:5000 flaskapp:latest
+   90  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin MYSQL_db=mydb -p 5000:5000 flaskapp:latest
+   91  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin mysql_db=mydb -p 5000:5000 flaskapp:latest
+   92  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=MYDB -p 5000:5000 flaskapp:latest
+   93  docker ps 
+   94  docker ps -a
+   95  docker inspect 66aed4e4b862
+   96  docker ps -a
+   97  docker inspect 5ce266c68f05
+   98  docker network create -d bridge twotier
+   99  docker network ls
+  100  docker inspect 5ce266c68f05
+  101  docker network inspect 5ce266c68f05
+  102  docker network ls
+  103  docker network inspect 15fb9d2ce178
+  104  docker ps
+  105  docker ps -a
+  106  docker stop 5ce266c68f05 && docker rm 5ce266c68f05
+  107  docker ps -a
+  108  docker ps 
+  109  docker run -d --name mysql -v mysql-volume:/var/lib/mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 --network=twotier mysql:5.7
+  110  docker ps -a
+  111  docker rm 66aed4e4b862
+  112  docker stop 66aed4e4b862;docker rm 66aed4e4b862
+  113  docker ps -a
+  114  docker run -d --name mysql -v mysql-volume:/var/lib/mysql -e MYSQL_DATABASE=mydb -e MYSQL_ROOT_PASSWORD=admin -p 3306:3306 --network=twotier mysql:5.7
+  115  docker pa 
+  116  docker pa
+  117  docker ps
+  118  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=MYDB -p 5000:5000 --network=twotier flaskapp:latest
+  119  docker ps 
+  120  docker ps -a
+  121  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=MYDB -p 5001:5001 --network=twotier flaskapp:latest
+  122  docker ps -a
+  123  docker stop 46b4e448cbfc;docker rm 46b4e448cbfc
+  124  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=MYDB -p 5001:5001 --network=twotier flaskapp:latest
+  125  docker ps 
+  126  docker ps -a
+  127  docker logs  56c73ab6078e
+  128  docker ps -a
+  129  docker stop 56c73ab6078e
+  130  docker rm 56c73ab6078e
+  131  docker ps -a
+  132  docker run -d --name flaskapp -e MYSQL_HOST=mysql -e MYSQL_USER=root -e MYSQL_PASSWORD=admin -e MYSQL_DB=mydb -p 5001:5001 --network=twotier flaskapp:latest
+  133  docker ps 
+  134  docker ps
+  135  history >>¸
+  136  cd
+  137  history >> docker_command.txt
+ubuntu@ip-172-31-90-130:~$ 
